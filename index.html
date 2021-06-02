@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .main-header {
+        background-color: rgb(238, 235, 235);
+        font-family: "Sigmar One", cursive;
+      }
+      .main-header .container {
+        width: 100%;
+        display: flex;
+        padding: 20px;
+        max-width: 1200px;
+      }
+      .main-header .logo h2 {
+        font-size: 30px;
+      }
+      .main-header .logo a {
+        font-size: 12px;
+      }
+      .main-header .main-nav {
+        display: flex;
+        margin: auto;
+      }
+      .main-header .main-nav a {
+        text-decoration: none;
+        padding: 10px 50px;
+        font-size: 25px;
+        color: black;
+      }
+      .titlePage {
+        width: 100%;
+        height: 100vh;
+        background-image: url("https://picsum.photos/500/500?random=1");
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+      }
+      .titlePage .txt {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: 0.3s;
+      }
+
+      .titlePage .txt h3,
+      .titlePage .txt p {
+        text-align: center;
+        transition: 0.3s;
+        opacity: 0;
+      }
+      .titlePage .txt h3 {
+        font-size: 100px;
+        color: #fff;
+      }
+      .titlePage .txt p {
+        font-size: 45px;
+        color: #fff;
+      }
+      .titlePage .txt:hover {
+        opacity: 1;
+        background-color: transparent;
+      }
+      .titlePage .txt:hover h3,
+      .titlePage .txt:hover p {
+        opacity: 1;
+      }
+      .about {
+        width: 100%;
+        height: 716px;
+        display: flex;
+      }
+      .about .txt {
+        display: flex;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        justify-items: center;
+        margin: auto;
+      }
+
+      .about .txt h2,
+      .about .txt p {
+        text-align: center;
+        padding: 25px 50px;
+      }
+      .about .txt h2 {
+        font-size: 42px;
+      }
+      .about .txt p {
+        font-size: 15px;
+      }
+      .about .myphoto {
+        width: 50%;
+      }
+      .contact {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+      }
+      .contact .linkedin,
+      .contact .github,
+      .contact .fb {
+        padding: 20px 50px;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
+          rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+          rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        transition: 0.3s;
+      }
+      .contact .linkedin:hover .fab,
+      .contact .github:hover .fab,
+      .contact .fb:hover .fab {
+        color: rgba(10, 32, 230, 0.5);
+        font-size: 200px;
+      }
+      .contact .fab {
+        font-size: 180px;
+        color: black;
+        transition: 1s;
+      }
+      .contact a {
+        color: black;
+        text-decoration: none;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-header">
+      <div class="container">
+        <div class="logo">
+          <h2>Leon Lin</h2>
+          <p>FrontEnd Developer</p>
+        </div>
+        <div class="main-nav">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="titlePage">
+      <div class="txt">
+        <h3>title</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+          voluptatibus enim perspiciatis atque! Cumque quisquam tempore eum ex
+          labore dolorem saepe nesciunt, numquam pariatur sint optio culpa
+          explicabo commodi ratione!
+        </p>
+      </div>
+    </div>
+
+    <div class="about">
+      <div class="txt">
+        <h2>ABOUT ME</h2>
+        <p>
+          I'm a paragraph. Click here to add your own text and edit me. It’s
+          easy. Just click “Edit Text” or double click me to add your own
+          content and make changes to the font. Feel free to drag and drop me
+          anywhere you like on your page
+        </p>
+        <p>
+          I'm a paragraph. Click here to add your own text and edit me. It’s
+          easy. Just click “Edit Text” or double click me to add your own
+          content and make changes to the font. Feel free to drag and drop me
+          anywhere you like on your page
+        </p>
+      </div>
+      <div class="myphoto">
+        <img src="https://picsum.photos/951/716?random=2" />
+      </div>
+    </div>
+    <div class="contact">
+      <div class="github">
+        <a href="#">
+          <i class="fab fa-github"></i>
+          <p>Contact me</p>
+        </a>
+      </div>
+      <div class="linkedin">
+        <a href="#">
+          <i class="fab fa-linkedin"></i>
+          <p>Contact me</p>
+        </a>
+      </div>
+      <div class="fb">
+        <a href="#">
+          <i class="fab fa-facebook-square"></i>
+          <p>Contact me</p>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
